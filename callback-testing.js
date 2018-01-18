@@ -1,11 +1,11 @@
-// var myFn = function() {
-//   console.log("I am function.");
-// }
-// // console.log(myFn);
-// myFn.someAttribute = 42;
-// myFn.aNewFunction = function(){
-//   console.log("I am the NEW function.");
-// }
+var myFn = function() {
+  console.log("I am function.");
+}
+// console.log(myFn);
+myFn.someAttribute = 42;
+myFn.aNewFunction = function(){
+  console.log("I am the NEW function.");
+}
 // console.log(myFn);
 // console.log(myFn.someAttribute);
 
