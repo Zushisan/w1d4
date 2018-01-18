@@ -30,12 +30,10 @@ var arr = [
 
 
 var result = arr.map(function multiply(data) {
- var zSquare = (data.x * data.x) + (data.y * data.y);
- var z = Math.sqrt(zSquare);
- return z;
-
-}
-
+   var zSquare = (data.x * data.x) + (data.y * data.y);
+   var z = Math.sqrt(zSquare);
+   return z;
+  }
 );
 
 
