@@ -1,14 +1,19 @@
 // The second argument/parameter is expected to be a function
+
+
 function findWaldo(arr, found) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === "Waldo") {
-      found(i);   // execute callback
+  arr.forEach(function(item, index){
+    if (item === "Waldo"){
+      found(item, index);
     }
-  }
+  });
 }
 
-function actionWhenFound(index) {
-  console.log("Found him in index: " +index);
+
+function actionWhenFound(name, index) {
+  console.log("Found " + name + " in index: " +index);
 }
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+
+
