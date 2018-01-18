@@ -9,12 +9,7 @@ function makeLoadedDie() {
  var index = 0;
 
  return function() {
-   index += 1;
-
-
-
-
-   return list[index - 1];
+   return list[index++];
  }
 }
 
